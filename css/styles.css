@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.contacts {    
+    margin: auto;
+    margin-top: 100px;
+}
+
+.contacts .contacts__form {
+    background-color: #5EC5B2;
+    border-radius: 5px;
+    border: 3px solid black;
+    max-width: 740px;
+
+    margin: auto;
+    margin-bottom: 30px;
+}
+
+.contacts .contacts__form input {
+    padding: 5px;
+    margin: 5px auto;
+
+    border-radius: 5px;
+    border: 2px solid black;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 400px;
+}
+
+.contacts .contacts__form button {
+    display: flex;
+    justify-content: center;
+
+    margin: 5px auto;
+    padding: 3px;
+
+    width: 100px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+
+    background-color: black;
+    color: white;
+}
+
+.contacts .contacts__form button:active {
+    transform: scale(1.1);
+}
+
+.contacts .contacts__list {
+    display: flex;
+    justify-content: start;
+    flex-wrap: wrap;
+}
+
+.contacts .contacts__list li {
+    list-style: none;
+    background-color: #000000;
+    color: white;
+
+    box-shadow: 5px -5px 5px rgb(155, 155, 155);
+
+    margin: 10px;
+    padding: 10px;
+
+    border-radius: 5px;
+    border: none;
+
+    position: relative;
+}
+
+.contacts .contacts__list .contact button {
+    border: none;
+    background-color: transparent;
+
+    position: absolute;
+    bottom: 100%;
+    left: 100%;
+    transform: rotate(45deg) scale(2);
+    transition: transform 0.5s ease;
+}
+
+.contacts .contacts__list .contact button:hover {
+    transform: scale(3) rotate(135deg);
+    
+    cursor: pointer;
+}
